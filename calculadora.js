@@ -1,11 +1,13 @@
 seleccion = false;
 while(seleccion == false){
-    operacion = prompt("Elija alguna de las siguientes operaciones: \n 1. Suma \n 2. Resta \n 3. Multiplicacion \n 4. Division");
-    if (operacion !== "1" && operacion !== "2" && operacion !== "3" && operacion !== "4"){
+    operacion = prompt("Elija alguna de las siguientes operaciones: \n 1. Suma \n 2. Resta \n 3. Multiplicacion \n 4. Division \n 5. Salir");
+    if (operacion !== "1" && operacion !== "2" && operacion !== "3" && operacion !== "4" && operacion !== "5"){
         alert("Por seleccione una opcion Valida");
     }
+    else if (operacion == "5"){
+        break;
+    }
     else{
-        seleccion = true;
         numero1 = parseFloat(prompt("Ingrese el primer numero"));
         numero2 = parseFloat(prompt("Ingrese el segundo numero"));
         if(operacion == "1"){
